@@ -1,0 +1,28 @@
+h3{
+    font-weight: normal;
+}
+
+#Rojo{
+    color: red;
+}
+
+#Azul{
+    color: blue;
+}
+
+#naranja{
+    color: orange;
+}
+
+#Verde{
+    color: green;
+}
+
+#Amarillo{
+    color: yellow;
+}
+
+img{
+    height: 200px;
+    width: 200px;
+}
