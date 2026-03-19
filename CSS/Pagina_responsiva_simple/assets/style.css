@@ -1,0 +1,55 @@
+/* 
+lightsalmon] Mobile Devices: 319px — 480px
+[powderblue] iPads and Tablets: 481px — 1200px
+[limegreen] Laptops: 1201px — 1600px
+[seagreen] Desktops: 1601px and more
+*/
+
+body{
+    background-color: #ccf5ee;
+}
+
+@media (min-width: 480px){
+
+    .cuadro_principal{
+        height: 741px;
+        width: 1200;
+        border: 10px black solid;
+        float: left;
+        margin: 21px;
+        padding: 13px;
+        
+
+    }
+
+    .lateral{
+        display: inline-block;
+        width: 740px;
+        height: 457px;
+        border: 10px black solid;
+    }
+
+    .bajo{
+        height: 282px;
+        width: 740px;
+        border: 10px blue solid;
+        clear: left;
+        display: inline-block;
+    }
+    
+    .principal{
+        margin: 0px;
+        position: absolute;
+        padding: 23px;
+        border: 50px black;
+
+    }
+    
+    
+
+
+
+
+
+
+}
