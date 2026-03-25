@@ -45,18 +45,27 @@
 
       .plan-title{
         background-color: #B2263A;
-        border-radius: 20px 20px 0 0;
+        border-radius: 18px 18px 0 0;
         text-align: center;
+        flex-basis: 30px;
+        font-family: staatliches;
+        font-size: 37px;
         
       }
 
       .plan-price{
          background-color: #B2263A;
          text-align: center;
+         flex-basis: 30px;
+         font-size: 21px;
       }
 
       .plan-features{
         background-color: #111E25;
+        color: #166275;
+        padding: 20px;
+        font-size: 20px;
+        margin: 5px;
 
       }
 
@@ -65,6 +74,9 @@
         border-radius: 20px 20px 20px 20px;
         display: flex;
         flex-flow: column wrap;
+        flex-shrink: 0;
+        
+        width: 300px;
          
       }
 
@@ -72,11 +84,30 @@
         align-self: center;
         flex-basis: 30px;
         border-radius: 13px;
+        font-family: staatliches;
+        font-size: 20px;
+        background-color: #166275;
+        margin: 13px;
       }
       
+      .li{
+        padding:100px;
+      }
 
      
-      @media (max-width: 1250px) {
+      @media (max-width: 1000px) {
+        .pricing-container{
+          flex-direction: column;
+          
+        }
+
+        .pricing-plan{
+          width: 50%;
+        }
+
+        .plan-button{
+          width: 40%;
+        }
 
       }
     </style>
