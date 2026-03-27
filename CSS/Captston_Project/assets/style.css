@@ -10,16 +10,12 @@
 body{
     background-color:#E8E9EB ;
     font-family: 'DM sans';
-    font-size: 13px;
+    
 }
-
 
 .navbar-customization{
     background-color: #112A6C !important;
     
-}
-#yo{
-    width: 50px;
 }
 
 .hero{
@@ -29,6 +25,7 @@ body{
     height: 800px;
 
 }
+
 
 .principal{
     grid-area: 1/1/3/2;
@@ -59,7 +56,7 @@ body{
     margin-left: 13px;
 }
 #imagen > img{
-    width: 60%;
+    width: 700px;
     border-radius: 30px;
 }
 #imagen{
@@ -100,4 +97,41 @@ p{
     float: left;
     width: 200px;
     margin-top: 20px;
+}
+
+@media(max-width: 1216px){
+    .hero{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-auto-rows: auto;
+    }
+    
+    #yo{
+        width: 200px;
+    }
+    .principal{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 100%;
+        height: 500px;
+        grid-area: 1/1/1/1;
+    }
+    #nick > h1{
+    font-family: staatliches;
+    font-size: 90px;
+    color: #112A6C;
+    
+    }
+    #nick{
+        margin-left: 10px;
+    }
+    #nombre > h2{
+        font-family: 'DM sans';
+        font-size: 20px;
+        color: #11296cbb;
+    }
+    #nombre{
+        margin-left: 13px;
+    }
 }
