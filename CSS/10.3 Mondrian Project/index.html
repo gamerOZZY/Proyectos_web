@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cuadro</title>
+  <style>
+    /* 
+    Write your CSS here 
+    Gap Colour: #000
+    White: #F0F1EC
+    Red: #E72F24
+    Black: #232629
+    Blue: #004592
+    Yellow: #F9D01E
+
+    For dimensions, see dimensions.png image.
+    HINT: Remember you can't change the properties of grid lines.
+    But grid lines are transparent!
+    */
+    #pantalla{
+      width: 100%;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-flow: column;
+      font-family: monospace;
+      font-size: 30px;
+      gap: 5vh;
+      
+    }
+    h1{
+      margin: 0px;
+    }
+
+
+
+    #cuadro{
+      width: 748px;
+      height: 746px;
+      display: grid;
+      gap: 9px;
+      background-color: black;
+      grid-template-columns: 320px 198px 153px 50px;
+      grid-template-rows: 414px 130px 155px 20px;
+    }
+
+    .blancos{
+      background-color:#F0F1EC ;
+    }
+    #blancoG{
+      grid-area: 1 / 2 / 1 / -1 ;
+    }
+
+    #blanco2{
+      grid-area: 2/1 /4 / 2 ;
+    }
+
+    #blanco3{
+      grid-area: 2/ 2/4 /4;
+    }
+
+    #rojo{
+      background-color: #E72F24;
+    }
+
+    #azul{
+      background-color:#004592 ;
+      grid-area: 2/ 4/ 3/-1;
+    }
+    #blanco4{
+      grid-area: 4/ 1/ -1/2;
+    }
+
+    #amarillo{
+      background-color:#F9D01E ;
+      grid-area: 4/ 2/-1 /3;
+    }
+
+    #negro{
+      background-color: #232629;
+      grid-area:4/ 3/-1 /4 ;
+    }
+
+    #blanco5{
+      grid-row: span 2;
+    }
+
+    
+
+
+  </style>
+
+</head>
+<body>
+<div id = 'pantalla'>
+  <h1>Cuadro de Mondrian</h1>
+  <div id = 'cuadro'>
+    <div id = 'rojo'></div>
+    <div id = 'blancoG' class='blancos'></div>
+    <div id = 'blanco2' class='blancos'></div>
+    <div id = 'blanco3' class='blancos'></div>
+    <div id = 'azul'></div>
+    <div id = 'blanco4' class='blancos'></div>
+    <div id = 'amarillo'></div>
+    <div id = 'negro'></div>
+    <div id = 'blanco5' class='blancos'></div>
+
+
+  </div>
+  <footer>Hecho por gamerOZZY</footer>
+</div>
+  
+</body>
+</html>
